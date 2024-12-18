@@ -1,4 +1,8 @@
 # Librerías para la preparación de datos
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 from langchain.document_loaders import PyPDFDirectoryLoader  
 from langchain.text_splitter import RecursiveCharacterTextSplitter  
 from langchain.vectorstores import Chroma
@@ -18,11 +22,10 @@ import os
 import cohere
 import numpy as np
 from dotenv import load_dotenv
-
-from langchain.vectorstores import Chroma
 from langchain.embeddings import CohereEmbeddings
 
 import PyPDF2
+
 
 # Configuración de la página
 st.set_page_config(
