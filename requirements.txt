@@ -11,3 +11,4 @@ langchainhub
 ipywidgets
 cohere
 streamlit
+pysqlite3-binary
