@@ -1,6 +1,6 @@
 # Gemini_Streamlit
 # Hazle preguntas a Gemini!
-
+![Vista de la web desplegada](GeminiStreamlit.png)
 Este proyecto es una aplicación web interactiva construida con **Streamlit**, que utiliza **LangChain** y la API de Cohere para analizar el contenido de un archivo PDF subido por el usuario y responder preguntas relacionadas. Además, aprovecha la potencia del modelo **Gemini** de Google para generar respuestas inteligentes en español.
 
 ## Características
